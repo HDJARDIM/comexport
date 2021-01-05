@@ -1,0 +1,32 @@
+package com.comexport.usuario.validator;
+
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
+import com.comexport.usuario.model.User;
+
+public class WebsiteUserValidator implements Validator {
+	
+	@Override
+	public boolean supports(Class<?> clazz) {
+		return User.class.equals(clazz);
+	}
+	
+	@Override
+	public void validate(Object obj, Errors errors) {
+
+		User user = (User) obj;
+
+		if (checkInputString(user.getName())) {
+			errors.rejectValue("Name", "Name.empty");
+		}
+		
+		if (checkInputString(user.getEmail())) {
+			errors.rejectValue("Email", "Email.empty");
+		}
+	}
+	
+    private boolean checkInputString(String input) {
+        return (input == null || input.trim().length() == 0);
+    }
+
+}

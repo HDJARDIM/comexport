@@ -1,0 +1,5 @@
+package com.comexport.votos.model;
+
+public class Vote_answer {
+
+}

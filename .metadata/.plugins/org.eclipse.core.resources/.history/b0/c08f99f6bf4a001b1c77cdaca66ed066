@@ -1,0 +1,5 @@
+package com.comexport.respostas.repository;
+
+public interface AnswerRepository {
+
+}

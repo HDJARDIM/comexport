@@ -1,0 +1,5 @@
+package com.comexport.perguntas.repository;
+
+public interface QuestionRepository {
+
+}

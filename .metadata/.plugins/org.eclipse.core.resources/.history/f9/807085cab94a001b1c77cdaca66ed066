@@ -1,0 +1,5 @@
+package com.comexport.perguntas.controller;
+
+public class QuestionController {
+
+}

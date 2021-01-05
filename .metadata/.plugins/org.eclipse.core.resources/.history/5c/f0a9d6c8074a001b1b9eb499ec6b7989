@@ -1,0 +1,5 @@
+package com.comexport.usuario.repository;
+
+public interface UserRepository {
+
+}

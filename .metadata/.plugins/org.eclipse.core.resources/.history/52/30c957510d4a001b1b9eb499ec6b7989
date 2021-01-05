@@ -1,0 +1,17 @@
+package com.comexport.usuario.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.comexport.usuario.repository.UserRepository;
+
+@RestController
+@RequestMapping({"/user"})
+public class UserController {
+	
+	private UserRepository repository;
+	
+	UserController(UserRepository userRepository) {
+		this.repository = userRepository;
+	}
+}

@@ -1,0 +1,5 @@
+package com.comexport.votos.validator;
+
+public class WebsiteVoteAnswerValidator {
+
+}

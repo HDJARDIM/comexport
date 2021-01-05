@@ -1,0 +1,5 @@
+package com.comexport.usuario.validator;
+
+public class WebsiteUserValidator {
+
+}

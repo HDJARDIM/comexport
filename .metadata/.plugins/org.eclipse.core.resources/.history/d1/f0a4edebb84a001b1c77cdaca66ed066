@@ -1,0 +1,13 @@
+package com.comexport.perguntas;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class PerguntasCadastroApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(PerguntasCadastroApplication.class, args);
+	}
+
+}

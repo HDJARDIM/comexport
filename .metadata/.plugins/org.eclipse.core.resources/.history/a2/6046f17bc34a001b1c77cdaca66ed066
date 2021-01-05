@@ -1,0 +1,5 @@
+package com.comexport.respostas.validator;
+
+public class WebsiteAnswerValidator {
+
+}

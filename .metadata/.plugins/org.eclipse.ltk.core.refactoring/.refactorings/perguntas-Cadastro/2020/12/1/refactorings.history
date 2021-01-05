@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;respostas-Cadastro/src/main/resources&apos;&#x0D;&#x0A;- Original project: &apos;perguntas-Cadastro&apos;&#x0D;&#x0A;- Destination element: &apos;respostas-Cadastro/src/main/resources&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     application.properties&#x0D;&#x0A;     cloud.properties" description="Copy files" destination="=respostas-Cadastro/src\/main\/resources=/maven.pomderived=/true=/" element1="src/main/resources/application.properties" element2="src/main/resources/cloud.properties" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1609346508329" units="0" version="1.0"/>
+</session>

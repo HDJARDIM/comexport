@@ -1,0 +1,5 @@
+package com.comexport.usuario.model;
+
+public class User {
+
+}

@@ -1,0 +1,5 @@
+package com.comexport.respostas.model;
+
+public class Answer {
+
+}

@@ -1,0 +1,23 @@
+package com.comexport.usuario;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+
+
+
+@SpringBootApplication
+public class UsuarioCadastroApplication {
+	
+	public static void main(String[] args) {
+		SpringApplication.run(UsuarioCadastroApplication.class, args);
+	}
+
+}

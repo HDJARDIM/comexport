@@ -1,0 +1,20 @@
+package com.comexport.perguntas;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.rest.core.event.ValidatingRepositoryEventListener;
+
+import com.comexport.perguntas.validator.WebsiteQuestionValidator;
+
+@SpringBootApplication
+public class PerguntasCadastroApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(PerguntasCadastroApplication.class, args);
+	}
+
+    public void configureValidatingRepositoryEventListener(
+    	      ValidatingRepositoryEventListener v) {
+    	        v.addValidator("beforeCreate", new WebsiteQuestionValidator());
+    	    }		
+}

@@ -1,0 +1,50 @@
+package com.comexport.usuario.validator;
+
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
+import com.comexport.usuario.model.User;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import javax.mail.*;
+
+
+public class WebsiteUserValidator implements Validator {
+	
+	@Override
+	public boolean supports(Class<?> clazz) {
+		return User.class.equals(clazz);
+	}
+	
+	@Override
+	public void validate(Object obj, Errors errors) {
+
+		User user = (User) obj;
+
+		if (checkInputString(user.getName())) {
+			errors.rejectValue("Name", "Name.empty");
+		}
+		
+		if (checkInputString(user.getEmail())) {
+			errors.rejectValue("Email", "Email.empty");
+		}
+		
+		if (checkInpuDate((user.getBirthdate().toString()))) {
+			errors.rejectValue("Birthdate", "Birthdate.invalid");
+		}
+	}
+	
+    private Boolean checkInputString(String input) {
+        return (input == null || input.trim().length() == 0);
+    }
+    
+    private Boolean checkInpuDate(String input) {
+    	try {
+    		Date today = new SimpleDateFormat("dd/MM/yyyy").parse(input);
+    		return false;
+    	}
+    	catch(Exception e) {
+    		return true;
+    	}
+    }
+
+}
